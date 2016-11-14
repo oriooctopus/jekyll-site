@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="spacer">
+    <div class="blogRolloutTitle" ><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></div>
+    <div class="blogRolloutAuthor">{{ page.author }}</div>
+    <div class="blogRolloutDot">&#x25cf;</div>
+    <div class="blogRolloutDate">{{ page.date | date: "%b %d, %Y" }}</div>
+
+    {{ content}}
+    
+</div>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<img src="Resources/Images/bg-main.jpg" class="fullImage">
+
+<section id="blogsRollout" class="spacer">
+    {% for post in site.posts  %}
+
+        <div class="blogRolloutTitle" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+        <div class="blogRolloutAuthor">{{ post.author }}</div>
+        <div class="blogRolloutDot">&#x25cf;</div>
+        <div class="blogRolloutDate">{{ post.date | date: "%b %d, %Y" }}</div>
+    
+        <div class="blogRolloutExcerpt">{{ post.excerpt }}</div>
+    
+    <div class=""><a href="{{ post.url | prepend: site.baseurl }}" class="readMore btn btn-primary">Read More</a></div>
+    
+        <hr class="blogLine">
+    {% endfor %}
+</section>

@@ -1,0 +1,18 @@
+<header>
+    <nav class="navbar navbar-default">
+        <div class="spacer">
+            <a id="logo"><a href="{{ site.url }}" class="navbar-brand hoverClass">greatDay</a>
+            <ul class="nav navbar-nav">
+            {% for page in site.pages %}
+                
+                {% if page.title %}
+                <li class="hoverClass">
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                </li>
+                {% endif %}
+
+            {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</header>

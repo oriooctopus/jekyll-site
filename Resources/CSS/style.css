@@ -1,0 +1,101 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html {
+    font-size: 10px;
+}
+#body {
+    margin: 0 30%;
+}
+.spacer {
+    margin: 0 25%;
+}
+/* NavBar */ 
+#logo {
+    display: inline;
+    float: left;
+    text-transform: uppercase;
+    color: deepskyblue
+}
+#logo, .navbar-nav li a {
+    font-size: 1.8rem;
+}
+.navbar-nav {
+    float: right !important;
+}
+.navbar-brand {
+    padding-left: 0 !important;
+}
+.hoverClass:hover {
+    border-bottom: 1px solid deepskyblue;
+}
+.fullImage {
+    margin-top: -2rem;
+    width: 100%;
+    height: 30rem;
+}
+
+/* Posts Loop   */
+
+#blogsRollout {
+    margin-top: 2rem;
+}
+.blogRolloutAuthor, .blogRolloutDot, .blogRolloutDate {
+    display: inline;
+}
+.blogRolloutTitle {
+    font-size: 3rem;
+}
+.blogRolloutTitle a {
+    color: darkslategray;
+}
+.blogRolloutAuthor {
+    display: inline-block;
+    margin-top: .2rem;
+    margin-bottom: 2.5rem;
+    color: deepskyblue;
+}
+.blogRolloutDate {
+    color: gray;
+}
+.blogRolloutExcerpt {
+    font-size: 1.6rem;
+}
+.readMore {
+    margin-top: 1.5rem !important;
+}
+.blogLine {
+    margin: 3.2rem 0 3.2rem 0 !important;
+    border: 1px dashed darkgray;
+    opacity: 1;
+}
+
+/* Meat Pages */
+
+.meatTitle {
+    font-size: 4.5rem !important;
+    margin: 6rem 0 5rem 0 !important;
+}
+.meatSpacer {
+    height: 9rem;
+}
+
+/* Footer */
+.footerLine {
+    border: 1px dashed lightgray;
+    margin: 12rem 0 7rem 0 !important;
+}
+.personalPicture{
+    width: 12rem !important;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem !important;
+}
+#footerText {
+    text-align: center;
+    margin-top: 1.7rem !important;
+    margin-bottom: 3.4rem !important;
+}
